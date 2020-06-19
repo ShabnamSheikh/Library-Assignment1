@@ -1,0 +1,421 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <title>Storystrap</title>
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.11.2/css/all.css">
+  <!-- Google Fonts Roboto -->
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap">
+  <!-- Bootstrap core CSS -->
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <!-- Material Design Bootstrap -->
+  <link rel="stylesheet" href="css/mdb.min.css">
+  <!-- Your custom styles (optional) -->
+  <link rel="stylesheet" href="css/style.css">
+   <style>
+	 a{
+         color:white;
+     } 
+
+	 .myButton {
+	box-shadow: 0px 1px 0px 0px #f0f7fa;
+	background:linear-gradient(to bottom, #33bdef 5%, #019ad2 100%);
+	background-color:#33bdef;
+	border-radius:6px;
+	border:1px solid #057fd0;
+	display:inline-block;
+	cursor:pointer;
+	color:#ffffff;
+	font-family:Arial;
+	font-size:13px;
+	font-weight:bold;
+	padding:6px 24px;
+	text-decoration:none;
+	text-shadow:0px -1px 0px #5b6178;
+	}
+	.myButton:hover {
+		background:linear-gradient(to bottom, #019ad2 5%, #33bdef 100%);
+		background-color:#019ad2;
+	}
+	.myButton:active {
+		position:relative;
+		top:1px;
+	}
+
+	/* Solid border */
+	hr.solid {
+	border-top: 0.5px solid #bbb;
+	}
+
+	.label {
+	color: white;
+	padding: 3px;
+	font-family: 'Roboto Condensed';
+	font-weight: bold;
+	
+	
+	}
+
+	.other {background-color: #e7e7e7; color: white;} /* Gray */
+
+
+.form-control {
+	margin-bottom: 5px;
+	padding-bottom: 5px;
+	 position: relative; 
+	 border: white;
+	 
+}
+
+.form-control label {
+
+	margin-bottom: 5px;
+	color:#111265;
+	border:white;
+	font-size: 18px;
+	font-weight: 500;
+	border-width: 0px;
+	
+	
+}
+.form-control input {
+	border: 2px solid #f0f0f0;
+	border-radius: 10px;
+	display: block;
+	font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+	font-size: 14px;
+	padding: 10px;
+	width: 100%;
+}
+
+.form-control input:focus {
+	outline: 0;
+	border-color: #777;
+}
+
+.form-control.success input {
+	border-color: #2ecc71;
+}
+
+.form-control.error input {
+	border-color: #e74c3c;
+}
+
+.form-control i {
+	visibility: hidden;
+	position: absolute;
+	top: 40px;
+	right: 10px;
+}
+.form-control.success i.fa-check-circle {
+	color: #2ecc71;
+	visibility: visible;
+}
+
+.form-control.error i.fa-exclamation-circle {
+	color: #e74c3c;
+	visibility: visible;
+
+}
+
+.form-control small {
+	color: #e74c3c;
+	position: absolute;
+	bottom: 0;
+	visibility: hidden;
+	font-size: 10px;
+
+
+}
+
+.form-control.error small {
+	visibility: visible;
+	
+	
+	
+}
+h2{
+	padding:5px;
+	font-size: 35px;
+	font-family: -appl 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+      font-weight: 500;
+}
+.gender{
+	font-size: 18px;
+	color:#111265;
+	text-align: left;
+	word-spacing:20px;
+    margin-left: 15px;
+}	
+
+.btn-group{
+	margin-left: 340px;
+	
+}
+
+  </style>
+</head>
+<body>
+
+	        <header style="background-color: #111265">
+            <div class="container-fluid" style="font-family: 'Roboto Condensed'; color: white; padding-top: 15px; padding-left: 80px">
+                <div class="row">
+                    <div class="col-md-12">
+                        <ul class="list-unstyled" id="head">
+                            <li class="list-item list-inline-item" style="padding-left:270px">
+                                <a href=index.html>HOME</a>
+                            </li>
+                            <li class="list-item list-inline-item" style="padding-left: 15px">
+                                <a href=sign.html>SIGN UP</a>
+                            </li>
+                            <li class="list-item list-inline-item" style="padding-left: 15px">
+                                <a href=log.html>LOGIN</a>
+                            </li>
+                           </ul> 
+                    </div>
+                </div>
+            </div>
+        </header>
+		
+		<section style="background-color: #ededed" class="pb-5">
+		  <!-- div class="edge-header deep-purple" style="background-color: ##000144" -->
+			<div style="background-color: #000144;">
+				<div class="container-fluid" style="font-family: 'Roboto Condensed'; color: white; padding-top: 80px; padding-bottom:100px;  padding-left: 80px; padding-right: 100px;">
+					<strong><div class="row">
+					
+						<div class="col-md-6 rectangle" style="background-color: #111265; padding-right: 80px" >
+						</div>
+					</div>
+					</strong>
+				</div>
+			</div>
+		  
+		  </div>
+			
+		  <!-- Main Container -->
+		  <div class="container free-bird" style="font-family: 'Roboto Condensed';">
+			<div class="row"></div>
+			<div class="col-sm-5 col-md-7 mx-auto float-none white z-depth-1 py-2 px-2">
+
+				<div class="card-body">
+
+				  <!--Body-->
+			
+                  <div class="container">
+                    <div class="header">
+                        <h2>Create Account</h2><br>
+                    </div>
+                    <form class="form" action="index.html" id="form" onsubmit="return validate()">
+                        <div class="form-control">
+							 <label for="username">Username</label>
+                            <input type="text" placeholder="Enter username" id="username" /><br>
+                           	<i class="fas fa-check-circle"></i>
+			               <i class="fas fa-exclamation-circle"></i><br>
+						    <small>Enter valid</small>
+                       
+                        </div>
+                       <br>
+                       <br>
+					  
+					   <div class="form-control">
+						<label for="username">Email</label>
+						<input type="text" placeholder="sheikh1151993@gmail.com" id="email" />
+						<i class="fas fa-check-circle"></i>
+						<i class="fas fa-exclamation-circle"></i>
+						<small>Enter valid email</small>
+					</div>
+					<br>
+					<br>
+					
+                        <div class="form-control">
+                            <label for="username">Password</label>
+                            <input type="password" placeholder="Enter 8 to 15 letters or numeric digits or underscore and first character a letter" id="password"/>
+							<i class="fas fa-check-circle"></i>
+							<i class="fas fa-exclamation-circle"></i>
+                            <small>Enter valid Password</small>
+                       
+                        </div>
+                        <br>
+                        <br>
+                      
+					   
+						 <div class="form-control">
+                            <label for="username">Confirm Password</label><br>
+                            <input type="password" placeholder="" id="password2"/><br>
+							<i class="fas fa-check-circle"></i>
+							<i class="fas fa-exclamation-circle"></i>
+                                <small>Password donot match</small>
+                       
+                        </div>
+                        <br>
+                        <br>
+						
+						
+					      <div class="gender">
+							<label for="username">Gender</label><br>
+							<input type="radio" name="Gender"> Female 
+							<input type="radio" name="Gender" >Male 
+							<input type="radio" name="Gender" >Other 
+						</div>
+                        <br>
+						<div class="form-control">
+                            <label for="username">DOB</label><br>
+                            <input type="datetime-local" placeholder="mm/dd/yyyy" id="date"/><br>
+						</div>
+						<br>
+						<br>
+						<div class="form-control">
+                            <label for="username">Address</label><br>
+							<input type="text" placeholder="Enter address" id="add"/><br>
+							<i class="fas fa-check-circle"></i>
+							<i class="fas fa-exclamation-circle"></i>
+                                <small>Enter address</small>
+                       </div>
+                        <br>
+                        <br>
+                        
+                     <div class="form-control">
+                        <label for="username">Mobile Number</label><br>
+                            <input type="number" id="mobilenumber" placeholder="Enter 10 digits"/><br>
+							<i class="fas fa-check-circle"></i>
+							<i class="fas fa-exclamation-circle"></i>
+                          <small>Enter 10 digit</small>
+                        
+                        </div>
+                   <br>
+                   <br>
+                  
+                    
+  
+				  	<div class=" d-flex flex-row-reverse text-xs-right">
+						<button type="submit">Submit</button>
+						
+					</div>
+                </form>
+
+
+				</div>
+
+
+			  </div>
+			</div>
+		  </div>
+		
+		  <!-- /.Main Container -->
+			
+		
+		</section>
+		<section style="background-color: #ededed;" class="pb-5">
+			<h3 style="font-family: 'Roboto Condensed'; color: #adadad; margin-left: 340px;"><strong>Follow Us</strong></h3>
+			<div class="btn-group" role="group" style="font-size: 10px;margin-left:340px;">
+				<button type="button" class="btn btn-primary">Twitter</button>
+				<button type="button" class="btn btn-blue">Facebook</button>
+				<button type="button" class="btn btn-red">Google+</button>
+			  </div>
+        </section>
+        <script type="text/javascript">
+        const form = document.getElementById('form');
+const username = document.getElementById('username');
+const email = document.getElementById('email');
+const password = document.getElementById('password');
+const password2 = document.getElementById('password2');
+const add = document.getElementById('add');
+const mobilenumber= document.getElementById('mobilenumber');
+
+form.addEventListener('submit', e => {
+	e.preventDefault();
+	
+	validate();
+});
+
+function validate() {
+	// trim to remove the whitespaces
+	const usernameValue = username.value.trim();
+	const emailValue = email.value.trim();
+	const passwordValue = password.value.trim();
+	const password2Value = password2.value.trim();
+	const addValue = add.value.trim();
+	const mobilenumberValue = mobilenumber.value.trim();
+    if(usernameValue === '') {
+		setErrorFor(username, 'Enter username');
+	} else {
+		setSuccessFor(username);
+	}
+	if(emailValue === '') {
+		setErrorFor(email, 'Enter valid email');
+	} else if (!isEmail(emailValue)) {
+		setErrorFor(email, 'Not a valid email');
+	} else {
+		setSuccessFor(email);
+	}
+	
+	if(passwordValue === '') {
+		setErrorFor(password, 'Password cannot be blank');
+	} else if (!isPassword(passwordValue)) {
+		setErrorFor(password, 'Not a valid password');
+	} else {
+		setSuccessFor(password);
+	}
+	if(password2Value === '') {
+		setErrorFor(password2, 'Enter valid password');
+	} else if(passwordValue !== password2Value) {
+		setErrorFor(password2, 'Password does not match');
+	} else{
+		setSuccessFor(password2);
+	}
+	if(addValue === '') {
+		setErrorFor(add, 'Enter address');
+	} else {
+		setSuccessFor(add);
+	}
+if(mobilenumberValue === '') {
+	setErrorFor(mobilenumber, 'Enter 10 digits');
+    } else if(!isMobilenumber(mobilenumberValue)) {
+		setErrorFor(mobilenumber, 'Enter valid number');
+	} else{
+		setSuccessFor(mobilenumber);
+	}
+}
+
+
+function setErrorFor(input, message) {
+	const formControl = input.parentElement;
+	
+	formControl.className = 'form-control error';
+	small.innerText = message;
+}
+
+function setSuccessFor(input) {
+	const formControl = input.parentElement;
+	formControl.className = 'form-control success';
+}
+
+function isEmail(email) {
+	return /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/.test(email);
+
+}
+function isPassword(password) {
+	return /^[A-Za-z]\w{7,15}$/.test(password);
+}
+function isPassword(password2) {
+	return /^[A-Za-z]\w{7,15}$/.test(password2);
+}
+
+function isMobilenumber(mobilenumber) {
+	return /^\d{10}$/.test(mobilenumber);
+}
+
+
+
+      
+        
+        
+        
+        
+        
+        </script>
+	</body>
+	</html>
